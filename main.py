@@ -19,13 +19,12 @@ async def showall(ctx):
 
 
 @bot.command()
-async def add():
-    await ctx.send(todoList)
+async def add(ctx, message):
+    await ctx.send(message)
 
 
 @bot.command()
-async def delete():
-    await ctx.send()
-
+async def delete(ctx, message):
+    await ctx.send(message)
 
 bot.run(TOKEN)
